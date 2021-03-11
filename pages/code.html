@@ -1,0 +1,138 @@
+<div style="display: flex; flex-direction: column">
+    <div style="display:flex; justify-content: flex-end">
+        <a style="display: contents" href="https://zabasylwia.github.io/Avon-Farm-Estate/navigation.html">
+            <img width="10%" src="https://dam.im8.world/newedge/img/noun_menu_3027221.png" alt="logo">
+        </a>
+    </div>
+    <div style="justify-content: center">
+        <img width="60%" src="${hotelLogo[0]}" alt="logo">
+    </div>
+</div>
+
+<br>
+<div>
+    <a href="#en">
+        <img style="width:15% " src="https://dam.im8.world/newedge/img/flag-en.png">
+    </a>
+    <a href="#fr">
+        <img style="width:15%; margin:20px;" src="https://dam.im8.world/newedge/img/flag-fr.png">
+    </a>
+
+    <a href="#es">
+        <img style="width:15%" src="https://dam.im8.world/newedge/img/flag-es.png">
+    </a>
+    <a href="#cn">
+        <img style="width:15%; margin-left:20px;" src="https://dam.im8.world/newedge/img/flag-cn.png">
+    </a>
+
+</div>
+<br>
+
+<p id="en" style="font-size:1rem">
+
+    <font color="black">
+        <script id="en">
+            var msg;
+            document.body.style.backgroundColor = "#ffffff";
+            if ("${foggerOld}" == "") {
+                if ("${foggerMulty}" != "") {
+                    msg = "${foggerMulty}"
+                } else
+                if ("${roomDisinfected}" != "null") {
+                    if ("${roomSanitized}" != "null") {
+                        msg = "This certificate confirms that on <b>${latestCleaningDate}</b>, <b>${hotelNumber}</b> has been sanitized with products certified to EN14476+A2 according to <b>${hotelName}</b> disinfection protocol.";
+                    } else {
+                        msg = "This certificate confirms that on <b>${latestCleaningDate}</b>, <b>${hotelNumber}</b> has been sanitized with products certified to EN14476+A2 according to <b>${hotelName}</b> disinfection protocol.";
+                    }
+                } else {
+                    msg = "This certificate confirms that on <b>${latestCleaningDate}</b>, <b>${hotelNumber}</b> has been sanitized with products certified to EN14476+A2 according to <b>${hotelName}</b> disinfection protocol.";
+                }
+            } else {
+                msg = "<font color='blue'>Cette étiquette appartient à un désinfectant atmosphérique précédemment utilisé. Ce désinfectant a été utilisé sur <b>${foggerUsed}</b></font>";
+            }
+            document.write(msg);
+            //document.getElementById("scan").innerHTML = msg;
+        </script>
+    </font>
+</p>
+<br>
+<p id="fr" style="font-size:1rem">
+    <font color="black">
+        <script>
+            var msg;
+            document.body.style.backgroundColor = "#ffffff";
+            if ("${foggerOld}" == "") {
+                if ("${foggerMulty}" != "") {
+                    msg = "${foggerMulty}"
+                } else
+                if ("${roomDisinfected}" != "null") {
+                    if ("${roomSanitized}" != "null") {
+                        msg = "Ce certificat confirme que le  <b>${latestCleaningDate}</b>  l'<b>${hotelName}</b> a mis en place un protocole de désinfection avec des produits certifiés à la norme EN14476+A2 et que la <b>${hotelNumber}</b> a été traitée.";
+                    } else {
+                        msg = "Ce certificat confirme que le  <b>${latestCleaningDate}</b>  l'<b>${hotelName}</b> a mis en place un protocole de désinfection avec des produits certifiés à la norme EN14476+A2 et que la <b>${hotelNumber}</b> a été traitée.";
+                    }
+                } else {
+                    msg = "Ce certificat confirme que le  <b>${latestCleaningDate}</b>  l'<b>${hotelName}</b> a mis en place un protocole de désinfection avec des produits certifiés à la norme EN14476+A2 et que la<b>${hotelNumber}</b> a été traitée.";
+                }
+            } else {
+                msg = "<font color='blue'>Cette étiquette appartient à un désinfectant atmosphérique précédemment utilisé. Ce désinfectant a été utilisé sur <b>${foggerUsed}</b></font>";
+            }
+            document.write(msg);
+            //document.getElementById("scan").innerHTML = msg;
+        </script>
+        <br></font>
+</p>
+
+<p id="es" style="font-size:1rem">
+    <font color="black">
+        <script>
+            var msg;
+            document.body.style.backgroundColor = "#ffffff";
+            if ("${foggerOld}" == "") {
+                if ("${foggerMulty}" != "") {
+                    msg = "${foggerMulty}"
+                } else
+                if ("${roomDisinfected}" != "null") {
+                    if ("${roomSanitized}" != "null") {
+                        msg = "Este certificado confirma que el <b>${latestCleaningDate}</b> el <b>${hotelName}</b> ha implementado un protocolo de desinfección con productos certificados según la norma EN14476 + A2 y que el <b>${hotelNumber}</b> ha sido procesado.";
+                    } else {
+                        msg = "Este certificado confirma que el <b>${latestCleaningDate}</b>> el <b>${hotelName}</b> ha implementado un protocolo de desinfección con productos certificados según la norma EN14476 + A2 y que el <b>${hotelNumber}</b> ha sido procesado.";
+                    }
+                } else {
+                    msg = "Este certificado confirma que el <b>${latestCleaningDate}</b>> el <b>${hotelName}</b> ha implementado un protocolo de desinfección con productos certificados según la norma EN14476 + A2 y que el <b>${hotelNumber}</b> ha sido procesado.";
+                }
+            } else {
+                msg = "<font color='blue'>Cette étiquette appartient à un désinfectant atmosphérique précédemment utilisé. Ce désinfectant a été utilisé sur <b>${foggerUsed}</b></font>";
+            }
+            document.write(msg);
+            //document.getElementById("scan").innerHTML = msg;
+        </script>
+        <br></font>
+</p>
+
+<p id="cn" style="font-size:1rem">
+    <font color="black">
+        <script>
+            var msg;
+            document.body.style.backgroundColor = "#ffffff";
+            if ("${foggerOld}" == "") {
+                if ("${foggerMulty}" != "") {
+                    msg = "${foggerMulty}"
+                } else
+                if ("${roomDisinfected}" != "null") {
+                    if ("${roomSanitized}" != "null") {
+                        msg = "该证书确认 <b>${latestCleaningDate}</b> 和 <b>${hotelName}</b> 已对标准EN14476 + A2认证的产品实施了消毒协议，并且 <b>${hotelNumber}</b> 已处理。.";
+                    } else {
+                        msg = "该证书确认 <b>${latestCleaningDate}</b> 和 <b>${hotelName}</b> 已对标准EN14476 + A2认证的产品实施了消毒协议，并且 <b>${hotelNumber}</b> 已处理。";
+                    }
+                } else {
+                    msg = "该证书确认 <b>${latestCleaningDate}</b> 和  <b>${hotelName}</b> 已对标准EN14476 + A2认证的产品实施了消毒协议，并且 <b>${hotelNumber}</b> 已处理。";
+                }
+            } else {
+                msg = "<font color='blue'>Cette étiquette appartient à un désinfectant atmosphérique précédemment utilisé. Ce désinfectant a été utilisé sur <b>${foggerUsed}</b></font>";
+            }
+            document.write(msg);
+            //document.getElementById("scan").innerHTML = msg;
+        </script>
+        <br></font>
+</p>
